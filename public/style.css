@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'OutFitMedium';
+    src: url(Fonts/Outfit-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    background: gray;
+}
+
+body * {
+    font-family: 'OutFitMedium';
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+table {
+    border: 2px solid gray;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+td {
+    border: 2px solid #fc6565;
+    padding: 4px;
+    text-align: justify;
+    font-size: 19px;
+}
+
+iframe {
+    border: 2px solid white;
+    box-shadow: 4px 4px 0px black;
+
+    transition: 0.2s;
+}
+
+iframe:hover {
+    border: 2px solid #fc6565;
+    box-shadow: 8px 8px 0px black;
+
+    transition: 0.2s;
+}
+
+section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 85%;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    border-radius: 8px;
+    color: #fc6565;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+
+    transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+}
+
+.center-column {
+    color: white;
+    border: 4px solid lightgray;
+    max-width: 900px;
+    min-height: 1080;
+    background-color: rgb(25, 25, 25);
+}
+
+.left-col {
+    float: left;
+    width: 400px;
+}
+
+.right-col {
+    float: right;
+    margin: 20px;
+    width: 350px;
+}
+
+.description {
+    font-size: 25px;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.nav-bar {
+    background-color: black;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0%;
+}
+
+.form {
+    width: 90%;
+    margin-bottom: 20px;
+    max-width: 650px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 4px 4px 0 black;
+}
+
+.form-group {
+    width: auto;
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.logo {
+    float: right;
+    font-size: 40;
+    color: white;
+    padding: 10px 0;
+}
+
+.games {
+    margin: 30px;
+}
+
+.games iframe {
+    width: 650px;
+    height: 167px;
+}
+
+.tableheader {
+    width: 642px;
+    padding: 4px;
+    color: white;
+    background-color: gray;
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #fc6565;
+}
+
+.active {
+    background-color: #fc6565;
+}
+.store {
+    margin: 100px;
+}
